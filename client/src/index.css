@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+/* prevent sections from being split across pages */
+.avoid-break {
+  page-break-inside: avoid;
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+}
+
+/* if you use images that need cross-origin, enable CORS or inline them */
