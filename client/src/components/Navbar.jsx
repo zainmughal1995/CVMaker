@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <div className="relative">
       {/* glow background */}
-      <div className="absolute inset-0 -z-10 blur-3xl opacity-40 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"></div>
+      <div className="absolute border inset-0 -z-10 blur-3xl opacity-80 bg-gradient-to-r from-black via-blue-800 to-orange-500"></div>
 
       <nav
         className="
@@ -23,7 +23,7 @@ export default function Navbar() {
       "
       >
         {/* Title */}
-        <h1 className="text-lg font-semibold text-black tracking-wide">
+        <h1 className="text-2xl font-semibold text-black tracking-wide">
           ATS CV Builder
         </h1>
 
