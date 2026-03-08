@@ -8,3 +8,4 @@
 }
 
 /* if you use images that need cross-origin, enable CORS or inline them */
+/* html2canvas does not support oklch colors */

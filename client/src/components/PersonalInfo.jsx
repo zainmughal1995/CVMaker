@@ -18,11 +18,11 @@ const PersonalInfo = ({ data }) => {
         {data.contact.whatsapp} | {data.contact.email}
       </p>
 
-      <div className="text-sm space-y-1 mt-2.5 text-gray-600">
+      <div className="text-sm space-y-1 mt-2.5 text-[#374151]">
         {/* LinkedIn */}
         {data.contact?.linkedin && (
           <div className="flex items-center justify-center gap-2">
-            <FaLinkedin className="text-gray-700" /> {/* LinkedIn logo */}
+            <FaLinkedin className="text-[#374151]" /> {/* LinkedIn logo */}
             {data.contact.linkedin}
           </div>
         )}
@@ -30,7 +30,7 @@ const PersonalInfo = ({ data }) => {
         {/* GitHub */}
         {data.contact?.github && (
           <div className="flex items-center justify-center gap-2">
-            <FaGithub className="text-gray-700" /> {/* GitHub logo */}
+            <FaGithub className="text-[#374151]" /> {/* GitHub logo */}
             {data.contact.github}
           </div>
         )}
@@ -38,7 +38,7 @@ const PersonalInfo = ({ data }) => {
         {/* Portfolio */}
         {data.contact?.portfolio && (
           <div className="flex items-center justify-center gap-2">
-            <FaGlobe className="text-gray-700" /> {/* Website logo */}
+            <FaGlobe className="text-[#374151]" /> {/* Website logo */}
             {data.contact.portfolio}
           </div>
         )}

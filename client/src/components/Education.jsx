@@ -16,7 +16,7 @@ export default function Education({ education }) {
           <div className="flex justify-between">
             <span className="font-semibold text-sm">{edu.degree}</span>
 
-            <span className="text-sm text-gray-600">
+            <span className="text-sm text-[#374151]">
               [{edu.start_date} – {edu.end_date}]
             </span>
           </div>
