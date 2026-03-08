@@ -1,85 +1,135 @@
 // JSON Upload + Download CV
+// UI improved: card layout, glass effect, modern buttons
+// Functionality unchanged
 
 import { useState } from "react";
 import html2pdf from "html2pdf.js";
+// import component
+import CopySampleJSON from "./CopySampleJSON";
 
 export default function LeftPanel({ onJsonLoad, cvRef }) {
   const [fileName, setFileName] = useState("");
 
   const handleFile = (e) => {
     const file = e.target.files[0];
-    if (!file) return;
+    if (!file) return; // no file
 
-    setFileName(file.name);
+    setFileName(file.name); // store file name
 
     const reader = new FileReader();
 
     reader.onload = (event) => {
       try {
-        const json = JSON.parse(event.target.result);
-        onJsonLoad(json);
+        const json = JSON.parse(event.target.result); // parse JSON
+        onJsonLoad(json); // send to parent
       } catch {
-        alert("Invalid JSON");
+        alert("Invalid JSON"); // error if JSON invalid
       }
     };
 
-    reader.readAsText(file);
+    reader.readAsText(file); // read file
   };
 
-  // LeftPanel.jsx
-  // Replace existing downloadPDF with this async function
-  // FIXED downloadPDF
-  // LeftPanel.jsx
-  // Simple and stable PDF export
-
   const downloadPDF = async () => {
-    const element = cvRef.current; // CV container
-    if (!element) return; // stop if ref missing
+    const element = cvRef.current;
+    if (!element) return; // ensure CV exists
 
-    // wait for fonts to load (prevents layout issues)
     if (document.fonts && document.fonts.ready) {
-      await document.fonts.ready;
+      await document.fonts.ready; // wait for fonts
     }
 
     const opt = {
-      margin: 25, // remove margins
+      margin: 25,
       filename: "cv.pdf",
-      image: { type: "jpeg", quality: 1 }, // high quality
+      image: { type: "jpeg", quality: 1 },
       html2canvas: {
-        scale: 2, // better resolution
-        useCORS: true, // allow external images
+        scale: 2,
+        useCORS: true,
         logging: false,
       },
       jsPDF: {
-        unit: "px", // match DOM units
-        format: [794, 1123], // A4 in px
+        unit: "px",
+        format: [794, 1123], // A4
         orientation: "portrait",
       },
     };
 
-    // generate PDF from actual element
-    await html2pdf().set(opt).from(element).save();
+    await html2pdf().set(opt).from(element).save(); // generate PDF
   };
 
   return (
-    <div>
-      <h2 className="text-xl font-semibold mb-4">Upload JSON</h2>
+    <div
+      className="
+      p-6
+      rounded-2xl
+      bg-white/10
+      backdrop-blur-lg
+      border border-white/20
+      shadow-lg
+      w-full
+      max-w-sm
+      "
+    >
+      {/* Title */}
+      <h2 className="text-xl font-semibold mb-6 text-black">Upload CV JSON</h2>
 
-      <input
-        type="file"
-        accept=".json"
-        onChange={handleFile}
-        className="mb-4"
-      />
+      {/* File input */}
+      <label
+        className="
+        flex
+        items-center
+        justify-center
+        w-full
+        h-28
+        border-2
+        border-dashed
+        border-white/30
+        rounded-xl
+        cursor-pointer
+        hover:bg-white/10
+        transition
+        text-black
+        text-sm
+        "
+      >
+        Select JSON File
+        <input
+          type="file"
+          accept=".json"
+          onChange={handleFile}
+          className="hidden"
+        />
+      </label>
 
-      {fileName && <p className="text-sm mb-4">Loaded: {fileName}</p>}
+      {/* File loaded */}
+      {fileName && (
+        <p className="text-sm mt-3 text-black/80">Loaded: {fileName}</p>
+      )}
 
+      {/* Download button */}
       <button
         onClick={downloadPDF}
-        className="bg-black text-white px-4 py-2 rounded"
+        className="
+        mt-6
+        w-full
+        py-2
+        rounded-xl
+        text-white
+        cursor-pointer
+        font-medium
+        bg-gradient-to-r
+        from-indigo-500
+        to-purple-600
+        shadow-md
+        hover:shadow-lg
+        hover:scale-[1.02]
+        transition
+        "
       >
         Download CV
       </button>
+
+      <CopySampleJSON />
     </div>
   );
 }

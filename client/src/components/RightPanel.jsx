@@ -1,4 +1,6 @@
 // CV Preview
+// Modern preview container with shadows, rounded edges, soft background
+// Functionality unchanged (important for PDF export)
 
 import { forwardRef } from "react";
 
@@ -11,28 +13,58 @@ import Skills from "./Skills";
 import Certificates from "./Certificates";
 
 const RightPanel = forwardRef(({ data }, ref) => {
-  if (!data) return <p>No JSON loaded</p>;
+  if (!data)
+    return (
+      <div
+        className="
+        flex
+        items-center
+        justify-center
+        h-[600px]
+        text-[#6B7280]
+        text-lg
+        "
+      >
+        No JSON loaded
+      </div>
+    );
 
   return (
-    // RightPanel.jsx
     <div
-      ref={ref}
-      style={{ width: "725px", background: "#fff" }}
-      className="p-6 font-serif"
+      className="
+      flex
+      justify-center
+      w-full
+      "
     >
-      <PersonalInfo data={data} />
+      {/* CV Paper */}
+      <div
+        ref={ref}
+        style={{ width: "725px", background: "#ffffff" }} // keep fixed width for PDF
+        className="
+        p-8
+        font-serif
+        rounded-2xl
+        shadow-[0_20px_60px_rgba(0,0,0,0.15)]
+        border
+        border-[#E5E7EB]
+        "
+      >
+        {/* CV Content */}
+        <PersonalInfo data={data} />
 
-      <Summary summary={data.summary} />
+        <Summary summary={data.summary} />
 
-      <Education education={data.education} />
+        <Education education={data.education} />
 
-      <Experience experience={data.experience} />
+        <Experience experience={data.experience} />
 
-      <Projects projects={data.projects} />
+        <Projects projects={data.projects} />
 
-      <Skills skills={data.skills} />
+        <Skills skills={data.skills} />
 
-      <Certificates certificates={data.certificates} />
+        <Certificates certificates={data.certificates} />
+      </div>
     </div>
   );
 });
