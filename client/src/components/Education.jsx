@@ -1,30 +1,70 @@
+// Education.jsx
+// Tailwind removed — Basic CSS used
+// Functionality unchanged
+
 export default function Education({ education }) {
   if (!education) return null;
 
+  const styles = {
+    section: {
+      marginBottom: "24px",
+    },
+    heading: {
+      fontSize: "18px",
+      borderBottom: "1px solid #000",
+      marginBottom: "12px",
+    },
+    spacer: {
+      paddingTop: "4px",
+      paddingBottom: "4px",
+    },
+    item: {
+      marginBottom: "12px",
+      pageBreakInside: "avoid",
+      breakInside: "avoid",
+    },
+    row: {
+      display: "flex",
+      justifyContent: "space-between",
+    },
+    degree: {
+      fontWeight: "600",
+      fontSize: "14px",
+    },
+    date: {
+      fontSize: "14px",
+      color: "#374151",
+    },
+    gpa: {
+      fontSize: "14px",
+    },
+    subjects: {
+      fontSize: "14px",
+      marginTop: "4px",
+    },
+  };
+
   return (
-    <section className="mb-6">
-      <h2 className="text-lg border-b mb-3">
-        Education<div className="py-1"></div>
+    <section style={styles.section}>
+      <h2 style={styles.heading}>
+        Education
+        <div style={styles.spacer}></div>
       </h2>
 
       {education.map((edu, i) => (
-        <div
-          key={i}
-          className="mb-3"
-          style={{ pageBreakInside: "avoid", breakInside: "avoid" }}
-        >
-          <div className="flex justify-between">
-            <span className="font-semibold text-sm">{edu.degree}</span>
+        <div key={i} style={styles.item}>
+          <div style={styles.row}>
+            <span style={styles.degree}>{edu.degree}</span>
 
-            <span className="text-sm text-[#374151]">
+            <span style={styles.date}>
               [{edu.start_date} – {edu.end_date}]
             </span>
           </div>
 
-          {edu.gpa && <div className="text-sm ">GPA: {edu.gpa}</div>}
+          {edu.gpa && <div style={styles.gpa}>GPA: {edu.gpa}</div>}
 
           {edu.subjects && (
-            <div className="text-sm mt-1">{edu.subjects.join(" | ")}</div>
+            <div style={styles.subjects}>{edu.subjects.join(" | ")}</div>
           )}
         </div>
       ))}

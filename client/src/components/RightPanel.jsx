@@ -1,6 +1,6 @@
 // CV Preview
-// Modern preview container with shadows, rounded edges, soft background
-// Functionality unchanged (important for PDF export)
+// Basic CSS version (No Tailwind)
+// Functionality preserved for PDF export
 
 import { forwardRef } from "react";
 
@@ -12,44 +12,42 @@ import Projects from "./Projects";
 import Skills from "./Skills";
 import Certificates from "./Certificates";
 
+const styles = {
+  emptyState: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    height: "600px",
+    color: "#6B7280",
+    fontSize: "18px",
+  },
+
+  container: {
+    display: "flex",
+    justifyContent: "center",
+    width: "100%",
+  },
+
+  paper: {
+    width: "725px", // keep fixed width for PDF export
+    background: "#ffffff",
+    padding: "32px",
+    fontFamily: "serif",
+    borderRadius: "16px",
+    boxShadow: "0 20px 60px rgba(0,0,0,0.15)",
+    border: "1px solid #E5E7EB",
+  },
+};
+
 const RightPanel = forwardRef(({ data }, ref) => {
-  if (!data)
-    return (
-      <div
-        className="
-        flex
-        items-center
-        justify-center
-        h-[600px]
-        text-[#6B7280]
-        text-lg
-        "
-      >
-        No JSON loaded
-      </div>
-    );
+  if (!data) {
+    return <div style={styles.emptyState}>No JSON loaded</div>;
+  }
 
   return (
-    <div
-      className="
-      flex
-      justify-center
-      w-full
-      "
-    >
+    <div style={styles.container}>
       {/* CV Paper */}
-      <div
-        ref={ref}
-        style={{ width: "725px", background: "#ffffff" }} // keep fixed width for PDF
-        className="
-        p-8
-        font-serif
-        rounded-2xl
-        shadow-[0_20px_60px_rgba(0,0,0,0.15)]
-        border
-        border-[#E5E7EB]
-        "
-      >
+      <div ref={ref} style={styles.paper}>
         {/* CV Content */}
         <PersonalInfo data={data} />
 

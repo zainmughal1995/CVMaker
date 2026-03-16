@@ -1,0 +1,410 @@
+{
+  "name": "Zain Ul Abdin",
+  "title": "Geographic Information Systems (GIS) Expert",
+  "location": "Islamabad, Pakistan",
+  "contact": {
+    "email": "mughalzain1995@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/zain-ul-abdin-07b91a204/",
+    "github": "https://github.com/zainmughal1995",
+    "whatsapp": "+923046574383",
+    "portfolio": "https://zainulabdindev.vercel.app/"
+  },
+  "summary": "GIS Expert with 6+ years of experience in geospatial analysis, cartography, and full-stack Web GIS development. Skilled in building interactive mapping systems, dashboards, and spatial data pipelines using React, Mapbox, Node.js, and PostGIS. Experienced in transforming complex spatial datasets into scalable web applications and decision-support tools across multiple industries.",
+  "education": [
+    {
+      "degree": "Master of Science in Remote Sensing & Geo-Information Science",
+      "start_date": "14 Sep 2020",
+      "end_date": "20 Jul 2022",
+      "subjects": [
+        "Big Geospatial Data Analysis using Google Earth Engine (GEE)",
+        "Advanced Remote Sensing and Digital Image Processing",
+        "Advanced Geographic Information Science",
+        "Spatial Thinking Monitoring and Mapping Natural Resources",
+        "Advance Programming and Customizing GIS",
+        "Advance Research Methods",
+        "Hydrometeorology",
+        "Hydrology and Water Resources",
+        "Thesis"
+      ],
+      "software": [
+        "QGIS",
+        "ArcGIS",
+        "ArcGIS Pro",
+        "ArcMap",
+        "ERDAS Imagine",
+        "ENVI",
+        "SNAP",
+        "GRASS GIS",
+        "SAGA GIS",
+        "Global Mapper",
+        "Google Earth Pro",
+        "MapInfo Professional",
+        "AutoCAD Map 3D",
+        "PostGIS",
+        "PostgreSQL",
+        "GeoServer",
+        "MapServer",
+        "QGIS Server",
+        "GDAL/OGR",
+        "Python",
+        "R",
+        "Google Earth Engine",
+        "ArcGIS Online",
+        "ArcGIS Enterprise",
+        "Leaflet.js",
+        "Mapbox GL JS"
+      ],
+      "gpa": "3.9 / 4.0",
+      "honors": "Summa Cum Laude"
+    },
+    {
+      "degree": "Bachelor of Science in Space Science",
+      "start_date": "13 Oct 2014",
+      "end_date": "01 Aug 2018",
+      "subjects": [
+        "Religious Studies",
+        "Introduction to Space Science",
+        "Pakistan Studies",
+        "Calculus",
+        "English Composition",
+        "Applied Physics",
+        "Introduction to Information Technology",
+        "Applied Physics Lab",
+        "Fundamental of GIS",
+        "Fundamental of GIS Lab",
+        "Engineering Mathematics",
+        "Communication Skills",
+        "Environmental Science",
+        "Applied Physics II",
+        "Programming Language",
+        "Circuits & Electronics Lab",
+        "Fundamental of Remote Sensing",
+        "Circuit & Electronics",
+        "Fundamental of Remote Sensing Lab",
+        "Differential Equation",
+        "Linear Algebra",
+        "Spherical Astronomy",
+        "Statistical Analysis",
+        "Electromagnetic Waves",
+        "Astronomy and Astrophysics",
+        "Astronomy and Astrophysics Lab",
+        "Space Plasma Physics",
+        "Classical Mechanics",
+        "Numerical Analysis",
+        "Meteorology",
+        "Digital Image Processing",
+        "Introduction to Spatial Database",
+        "Modern Physics",
+        "Solar Physics",
+        "Atmospheric Chemistry",
+        "Space Flight Dynamics",
+        "Geostatistics",
+        "Fundamentals of Communication",
+        "Mathematical Methods for Space Science",
+        "Technical Writing",
+        "Introduction to Dynamic Meteorology",
+        "Space Mission Design",
+        "Design Project I",
+        "Introduction to Philosophy",
+        "Space Law & Policy",
+        "Climate System Dynamics and Modeling",
+        "Computational Physics and Lab",
+        "Design Project II",
+        "Applied Remote Sensing",
+        "Applied Remote Sensing Lab",
+        "GIS Customization and Programming with Python",
+        "Space System Project Management"
+      ],
+      "gpa": "2.79 / 4.0"
+    }
+  ],
+  "experience": [
+    {
+      "role": "Intern",
+      "organization": "Space Systems Lab",
+      "location": "Islamabad, Pakistan",
+      "type": "On-site",
+      "start_date": "May 2018",
+      "end_date": "Nov 2018",
+      "responsibilities": [
+        "Performed cartographic map design using QGIS, ensuring clear symbology, labeling, and map layouts for geospatial datasets.",
+        "Conducted onscreen digitization of roads, administrative boundaries, and land features from satellite imagery.",
+        "Cleaned and structured vector datasets by correcting topology errors and validating geometry.",
+        "Created thematic maps for project reports using appropriate projections and classification methods.",
+        "Converted raster maps into vector layers through manual digitization for GIS analysis.",
+        "Organized and maintained attribute tables for digitized features to ensure accurate spatial data records.",
+        "Assisted in georeferencing scanned maps to align them with real-world coordinate systems.",
+        "Exported finalized cartographic layouts and GIS layers for internal reports and presentations."
+      ],
+      "skills": [
+        "QGIS",
+        "Cartography",
+        "Map Design",
+        "On-screen Digitization",
+        "Georeferencing",
+        "Spatial Data Cleaning",
+        "Vector Editing",
+        "Coordinate Systems"
+      ]
+    },
+    {
+      "role": "GIS Developer",
+      "organization": "Kaspar Consulting Services",
+      "location": "Gauteng, South Africa",
+      "type": "Remote",
+      "start_date": "Dec 2018",
+      "end_date": "Aug 2022",
+      "responsibilities": [
+        "Developed custom QGIS plugins tailored to meet specific requirements of telecom clients using Python and PyQGIS.",
+        "Built the main GIS data visualization dashboard in QGIS using Python for comprehensive spatial data insights.",
+        "Automated the data fetching process, replicating Azenqos (AZM file) functionality by integrating SQLite with Python GIS libraries.",
+        "Implemented PyQGIS scripts to automate geospatial data processing and reduce repetitive GIS workflows.",
+        "Designed custom map tools and UI components within QGIS plugins using Python and Qt Designer.",
+        "Integrated spatial datasets from multiple sources (CSV, GeoJSON, Shapefiles, SQLite) for telecom network analysis.",
+        "Optimized spatial queries and map rendering performance in QGIS for handling large telecom datasets.",
+        "Processed and validated telecom network spatial data including towers, coverage areas, and infrastructure layers.",
+        "Implemented data validation and error handling within plugins to ensure data integrity during processing.",
+        "Prepared technical documentation and testing procedures for developed plugins before client deployment."
+      ],
+      "skills": [
+        "Python",
+        "PyQGIS",
+        "QGIS Plugin Development",
+        "PyQt",
+        "Qt Designer",
+        "SQLite",
+        "GIS Automation",
+        "Spatial Data Visualization"
+      ]
+    },
+    {
+      "role": "GIS Analyst",
+      "organization": "Zoneomics",
+      "location": "Boca Raton, Florida, USA",
+      "type": "Remote",
+      "start_date": "Oct 2022",
+      "end_date": "Mar 2024",
+      "responsibilities": [
+        "Automated the complete zoning map QA workflow using Python with core GIS libraries such as Rasterio, Shapely, and Fiona within QGIS.",
+        "Conducted daily quality assurance checks on zoning datasets to ensure spatial accuracy and regulatory compliance.",
+        "Performed high-precision digitization of zoning boundaries from municipal zoning documents and maps.",
+        "Converted scanned zoning maps into structured GIS datasets for analysis and client delivery.",
+        "Validated geometry, topology, and attribute data to maintain consistent zoning data standards.",
+        "Automated zoning data processing scripts to accelerate map validation and reduce manual errors.",
+        "Produced standardized zoning layers and map outputs for large-scale urban planning datasets.",
+        "Delivered zoning datasets for major clients including Google, Zillow, Redfin, Realtor.com, and Estately through Zoneomics.",
+        "Maintained GIS data integrity and version control across large zoning databases.",
+        "Assisted in resolving zoning classification conflicts during the QA and validation process.",
+        "Documented QA procedures and workflow improvements for the internal GIS team.",
+        "Trained newly recruited GIS analysts on zoning digitization, QA standards, and internal GIS tools."
+      ],
+      "skills": [
+        "QGIS",
+        "Zoning Digitization",
+        "GIS QA",
+        "Python Automation",
+        "Rasterio",
+        "Shapely",
+        "Fiona",
+        "Spatial Data Validation",
+        "Topology"
+      ]
+    },
+    {
+      "role": "GIS Developer",
+      "organization": "Farmdar",
+      "location": "Lahore, Pakistan",
+      "type": "Remote",
+      "start_date": "Oct 2024",
+      "end_date": "Mar 2025",
+      "responsibilities": [
+        "Developed GIS-based analytical solutions to solve complex spatial problems across geospatial and remote sensing datasets.",
+        "Automated GIS workflows and spatial data processing using Python to improve efficiency and reduce manual processing time.",
+        "Deployed and maintained GIS web applications for spatial data visualization and analysis.",
+        "Designed and implemented a Brown Planthopper (BPH) disease detection methodology using remote sensing techniques.",
+        "Developed the complete BPH detection pipeline in Python, automating data acquisition, processing, and result generation.",
+        "Deployed the BPH detection system on GitHub and AWS to enable scalable and accessible execution.",
+        "Built a real-time pixel-level crop disease detection model using NDVI for accurate identification of infected agricultural zones.",
+        "Optimized and automated the biomass detection model, significantly improving processing speed for AgromAI workflows.",
+        "Applied geospatial analysis, remote sensing, and programming expertise to develop scalable agricultural intelligence solutions."
+      ],
+      "skills": [
+        "Python",
+        "Remote Sensing",
+        "NDVI Analysis",
+        "Raster Processing",
+        "Machine Learning",
+        "AWS",
+        "GitHub",
+        "Geospatial Algorithms"
+      ]
+    }
+  ],
+  "projects": {
+    "interactive_web_mapping": [
+      "Interactive Fuel Consumption Calculator Map using Leaflet, React and Node.js",
+      "React Based Geocoding and Address Search Web Application using Mapbox Geocoding API"
+    ],
+    "frontend_gis_development": [
+      "Responsive Web GIS Interface for Location Search and Map Interaction using React and Leaflet",
+      "Interactive Telecom Drive Test Visualization Dashboard using React and Spatial Charts"
+    ],
+    "backend_gis_development": [
+      "Spatial API Service for Geo-data Processing using Node.js and PostGIS",
+      "Geospatial Processing Pipeline for Raster and Vector Analysis using Python and GDAL"
+    ],
+    "machine_learning_ai_gis": [
+      "Habitat Suitability Modeling using Sentinel-2 Imagery, GBIF Data and Maximum Entropy Algorithm on Google Earth Engine",
+      "Automated Land Use and Land Cover Classification using Machine Learning on Satellite Imagery"
+    ],
+    "remote_sensing_applications": [
+      "Solar Power Plant Site Suitability Analysis in Islamabad using Multi-Criteria Evaluation and Landsat Imagery",
+      "Hydropower Impact Assessment in Kullu District, India using Land Cover Change Analysis (1992–2019)"
+    ]
+  },
+  "skills": {
+    "programming_languages": [
+      "Python",
+      "JavaScript",
+      "TypeScript",
+      "SQL",
+      "R",
+      "C#",
+      "HTML5",
+      "CSS3"
+    ],
+    "frontend_web_development": [
+      "React.js",
+      "Next.js",
+      "Vite",
+      "Tailwind CSS",
+      "Bootstrap",
+      "Responsive Web Design",
+      "REST API Integration",
+      "Component-Based UI Architecture"
+    ],
+    "web_mapping_libraries": [
+      "Leaflet.js",
+      "Mapbox GL JS",
+      "OpenLayers",
+      "ArcGIS JavaScript API",
+      "Deck.gl"
+    ],
+    "backend_development": [
+      "Node.js",
+      "Express.js",
+      "REST API Development",
+      "Authentication Systems",
+      "Server-side Data Processing"
+    ],
+    "gis_software": [
+      "QGIS",
+      "ArcGIS",
+      "ArcGIS Pro",
+      "ArcMap",
+      "Global Mapper",
+      "GRASS GIS",
+      "SAGA GIS",
+      "Google Earth Pro",
+      "MapInfo Professional"
+    ],
+    "spatial_databases": [
+      "PostgreSQL",
+      "PostGIS",
+      "Spatial SQL",
+      "Database Schema Design",
+      "Spatial Indexing",
+      "Query Optimization"
+    ],
+    "devops_tools": [
+      "Git",
+      "GitHub",
+      "GitLab",
+      "Docker",
+      "CI/CD Pipelines",
+      "Linux CLI"
+    ],
+    "data_formats": [
+      "GeoJSON",
+      "Shapefile",
+      "GeoTIFF",
+      "KML",
+      "GPKG",
+      "CSV",
+      "NetCDF",
+      "OGC Standards (WMS, WFS, WMTS)"
+    ]
+  },
+  "certificates": [
+    {
+      "name": "Web GIS and Spatial Database Development using Free and Open Source Software",
+      "date": "20 Jul 2022",
+      "issuer": "Inter-Islamic Network on Space Sciences and Technology (ISNET)"
+    },
+    {
+      "name": "GIS Data Acquisition and Map Design",
+      "date": "12 Mar 2022",
+      "issuer": "University of Toronto (Coursera)"
+    },
+    {
+      "name": "Introduction to GIS Mapping",
+      "date": "17 Nov 2020",
+      "issuer": "University of Toronto (Coursera)"
+    },
+    {
+      "name": "Python Geospatial Data Analysis",
+      "date": "14 Nov 2020",
+      "issuer": "Coursera Project Network"
+    },
+    {
+      "name": "Spatial Data Science: The New Frontier in Analytics",
+      "date": "06 Dec 2020",
+      "issuer": "ESRI"
+    },
+    {
+      "name": "Cartography",
+      "date": "23 Mar 2022",
+      "issuer": "ESRI"
+    },
+    {
+      "name": "ArcGIS Online Basics",
+      "date": "01 Apr 2020",
+      "issuer": "ESRI"
+    },
+    {
+      "name": "Exploring GIS Maps",
+      "date": "04 Apr 2020",
+      "issuer": "ESRI"
+    },
+    {
+      "name": "Getting Started with Spatial Analysis",
+      "date": "02 Apr 2020",
+      "issuer": "ESRI"
+    },
+    {
+      "name": "Using GIS to Solve Problems",
+      "date": "04 Apr 2020",
+      "issuer": "ESRI"
+    },
+    {
+      "name": "Getting Started with GIS",
+      "date": "31 Mar 2020",
+      "issuer": "ESRI"
+    },
+    {
+      "name": "Python for Everyone",
+      "date": "01 Apr 2020",
+      "issuer": "ESRI"
+    },
+    {
+      "name": "Introduction to Python",
+      "date": "19 Nov 2020",
+      "issuer": "Coursera Project Network"
+    },
+    {
+      "name": "Python Programming from Scratch",
+      "date": "28 Mar 2020",
+      "issuer": "Eduonix Learning Solutions"
+    }
+  ]
+}

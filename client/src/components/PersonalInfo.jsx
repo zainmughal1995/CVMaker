@@ -1,33 +1,78 @@
 // PersonalInfo.jsx
-// Component for displaying personal information
+// Tailwind removed — Basic CSS used
+// Functionality unchanged
 
 import React from "react";
-import { FaLinkedin, FaGithub, FaGlobe } from "react-icons/fa"; // icons
+import { FaLinkedin, FaGithub, FaGlobe } from "react-icons/fa";
+
+const styles = {
+  container: {
+    textAlign: "center",
+    marginBottom: "40px",
+  },
+  name: {
+    fontSize: "30px",
+    fontWeight: 800,
+  },
+  title: {
+    fontSize: "18px",
+    fontFamily: "sans-serif",
+    textTransform: "uppercase",
+    margin: "12px 0",
+  },
+  location: {
+    fontSize: "14px",
+  },
+  contact: {
+    fontSize: "14px",
+    marginTop: "8px",
+  },
+  linksRow: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    gap: "16px",
+    marginTop: "10px",
+    color: "#374151",
+  },
+  linkGroup: {
+    display: "flex",
+    alignItems: "center",
+    gap: "4px",
+  },
+  link: {
+    color: "#2563EB",
+    textDecoration: "none",
+  },
+};
 
 const PersonalInfo = ({ data }) => {
   return (
-    <div className="text-center mb-10">
+    <div style={styles.container}>
       {/* Name */}
-      <h1 className="text-3xl  font-extrabold">{data.name}</h1>
+      <h1 style={styles.name}>{data.name}</h1>
+
       {/* Title */}
-      <p className="text-lg font-sans uppercase m-3 ">{data.title}</p>
+      <p style={styles.title}>{data.title}</p>
+
       {/* Location */}
-      <p className="text-sm">{data.location}</p>
-      {/* Contact line */}
-      <p className="text-sm mt-2">
+      <p style={styles.location}>{data.location}</p>
+
+      {/* Contact */}
+      <p style={styles.contact}>
         {data.contact.whatsapp} | {data.contact.email}
       </p>
 
-      <div className="flex justify-center items-center gap-4 mt-2.5 text-[#374151]">
+      <div style={styles.linksRow}>
         {/* LinkedIn */}
         {data.contact?.linkedin && (
-          <div className="flex items-center gap-1">
-            <FaLinkedin className="text-[#374151]" /> {/* LinkedIn logo */}
+          <div style={styles.linkGroup}>
+            <FaLinkedin />
             <a
               href={data.contact.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#2563EB] hover:underline"
+              style={styles.link}
             >
               LinkedIn
             </a>
@@ -36,13 +81,13 @@ const PersonalInfo = ({ data }) => {
 
         {/* GitHub */}
         {data.contact?.github && (
-          <div className="flex items-center gap-1">
-            <FaGithub className="text-[#374151]" /> {/* GitHub logo */}
+          <div style={styles.linkGroup}>
+            <FaGithub />
             <a
               href={data.contact.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#2563EB] hover:underline"
+              style={styles.link}
             >
               GitHub
             </a>
@@ -51,13 +96,13 @@ const PersonalInfo = ({ data }) => {
 
         {/* Portfolio */}
         {data.contact?.portfolio && (
-          <div className="flex items-center gap-1">
-            <FaGlobe className="text-[#374151]" /> {/* Website logo */}
+          <div style={styles.linkGroup}>
+            <FaGlobe />
             <a
               href={data.contact.portfolio}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#2563EB] hover:underline"
+              style={styles.link}
             >
               Portfolio
             </a>
