@@ -8,31 +8,29 @@ import { FaLinkedin, FaGithub, FaGlobe } from "react-icons/fa";
 const styles = {
   container: {
     textAlign: "center",
-    marginBottom: "40px",
+    marginBottom: "20px",
   },
   name: {
-    fontSize: "30px",
+    fontSize: "40px",
     fontWeight: 800,
   },
   title: {
     fontSize: "18px",
     fontFamily: "sans-serif",
     textTransform: "uppercase",
-    margin: "12px 0",
   },
   location: {
     fontSize: "14px",
   },
   contact: {
     fontSize: "14px",
-    marginTop: "8px",
   },
   linksRow: {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
     gap: "16px",
-    marginTop: "10px",
+
     color: "#374151",
   },
   linkGroup: {

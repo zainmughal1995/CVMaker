@@ -7,7 +7,7 @@ export default function Projects({ projects }) {
 
   const styles = {
     section: {
-      marginBottom: "24px",
+      marginBottom: "12px",
     },
     heading: {
       fontSize: "18px",
@@ -30,6 +30,16 @@ export default function Projects({ projects }) {
     items: {
       fontSize: "14px",
     },
+    listItem: {
+      marginBottom: "2px",
+      color: "#808080", // Gray color
+      fontFamily: "sans-serif", // Sans font
+    },
+    list: {
+      paddingLeft: "24px",
+      fontSize: "14px",
+      listStyleType: "disc", // Dots
+    },
   };
 
   return (
@@ -45,7 +55,13 @@ export default function Projects({ projects }) {
             {key.replaceAll("_", " ").toUpperCase()}
           </span>
 
-          <div style={styles.items}>{items.join(" | ")}</div>
+          <ul style={styles.list}>
+            {items.map((item, index) => (
+              <li key={index} style={styles.listItem}>
+                {item}
+              </li>
+            ))}
+          </ul>
         </div>
       ))}
     </section>

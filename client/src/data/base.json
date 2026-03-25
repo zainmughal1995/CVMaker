@@ -1,6 +1,6 @@
 {
   "name": "Zain Ul Abdin",
-  "title": "Geographic Information Systems (GIS) Expert",
+  "title": "Geographic Information Systems (GIS) Analyst | Assistant Manager (GIS)",
   "location": "Islamabad, Pakistan",
   "contact": {
     "email": "mughalzain1995@gmail.com",
@@ -260,6 +260,31 @@
     "remote_sensing_applications": [
       "Solar Power Plant Site Suitability Analysis in Islamabad using Multi-Criteria Evaluation and Landsat Imagery",
       "Hydropower Impact Assessment in Kullu District, India using Land Cover Change Analysis (1992–2019)"
+    ],
+    "digitization_projects": [
+      "High-Accuracy Road Network Digitization from Satellite Imagery using QGIS",
+      "Parcel Boundary Digitization and Topology Correction for Cadastral Mapping using ArcGIS",
+      "Building Footprint Digitization with Attribute Data Extraction using High-Resolution Imagery in QGIS"
+    ],
+    "spatial_analysis_projects": [
+      "Site Suitability Analysis for Healthcare Facilities using Multi-Criteria Decision Analysis in GIS",
+      "Hotspot Analysis of Crime Data using Kernel Density Estimation in ArcGIS",
+      "Flood Risk Zonation using Buffering, Overlay Analysis and DEM in ArcGIS"
+    ],
+    "cartography_projects": [
+      "Thematic Population Density Map Design using Graduated Symbols and Color Schemes in QGIS",
+      "Topographic Map Creation with Contours, Hillshade and Elevation Styling using ArcGIS",
+      "Land Use Map Design with Custom Legends, Labels and Symbology using QGIS"
+    ],
+    "google_earth_engine_projects": [
+      "Land Use Land Cover Classification using Sentinel-2 Imagery and Supervised Classification in Google Earth Engine",
+      "NDVI Time Series Analysis for Vegetation Health Monitoring using Landsat Data in Google Earth Engine",
+      "Flood Extent Mapping using Sentinel-1 SAR Data and Thresholding Techniques in Google Earth Engine"
+    ],
+    "data_collection_survey_projects": [
+      "Mobile GIS Data Collection for Asset Mapping using Survey123 and ArcGIS Online",
+      "Field Survey and GPS Data Collection for Infrastructure Mapping using QField and QGIS",
+      "Crowdsourced Data Collection and Validation for Points of Interest using OpenStreetMap"
     ]
   },
   "skills": {
@@ -275,7 +300,6 @@
     ],
     "frontend_web_development": [
       "React.js",
-      "Next.js",
       "Vite",
       "Tailwind CSS",
       "Bootstrap",
@@ -288,14 +312,15 @@
       "Mapbox GL JS",
       "OpenLayers",
       "ArcGIS JavaScript API",
-      "Deck.gl"
+      "TurfJS"
     ],
     "backend_development": [
       "Node.js",
       "Express.js",
       "REST API Development",
       "Authentication Systems",
-      "Server-side Data Processing"
+      "Server-side Data Processing",
+      "Django"
     ],
     "gis_software": [
       "QGIS",
@@ -306,7 +331,7 @@
       "GRASS GIS",
       "SAGA GIS",
       "Google Earth Pro",
-      "MapInfo Professional"
+      "Google Earth Engine"
     ],
     "spatial_databases": [
       "PostgreSQL",
@@ -316,14 +341,7 @@
       "Spatial Indexing",
       "Query Optimization"
     ],
-    "devops_tools": [
-      "Git",
-      "GitHub",
-      "GitLab",
-      "Docker",
-      "CI/CD Pipelines",
-      "Linux CLI"
-    ],
+    "devops_tools": ["Git", "GitHub", "Docker", "CI/CD Pipelines", "Linux CLI"],
     "data_formats": [
       "GeoJSON",
       "Shapefile",

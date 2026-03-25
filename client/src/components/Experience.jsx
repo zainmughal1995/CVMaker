@@ -33,14 +33,15 @@ export default function Experience({ experience }) {
     organization: {
       fontStyle: "italic",
       fontSize: "14px",
-      marginBottom: "4px",
     },
     list: {
       paddingLeft: "24px",
-      fontSize: "14px",
+      fontSize: "12px",
+      listStyleType: "disc", // Dots
     },
     listItem: {
-      marginBottom: "2px",
+      color: "#808080", // Gray color
+      fontFamily: "sans-serif", // Sans font
     },
   };
 

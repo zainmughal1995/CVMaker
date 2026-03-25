@@ -7,13 +7,12 @@ export default function Summary({ summary }) {
 
   const styles = {
     section: {
-      marginBottom: "24px",
+      marginBottom: "12px",
     },
     heading: {
       fontSize: "18px",
       fontWeight: "bold",
       borderBottom: "1px solid #000",
-      marginBottom: "16px",
     },
     spacer: {
       paddingTop: "4px",

@@ -7,19 +7,17 @@ export default function Education({ education }) {
 
   const styles = {
     section: {
-      marginBottom: "24px",
+      marginBottom: "12px",
     },
     heading: {
       fontSize: "18px",
       borderBottom: "1px solid #000",
-      marginBottom: "12px",
     },
     spacer: {
       paddingTop: "4px",
       paddingBottom: "4px",
     },
     item: {
-      marginBottom: "12px",
       pageBreakInside: "avoid",
       breakInside: "avoid",
     },
@@ -39,8 +37,11 @@ export default function Education({ education }) {
       fontSize: "14px",
     },
     subjects: {
-      fontSize: "14px",
+      fontSize: "10px",
       marginTop: "4px",
+      color: "#808080", // Gray color
+      fontWeight: "bold", // Bold text
+      fontFamily: "sans-serif", // Sans font
     },
   };
 
